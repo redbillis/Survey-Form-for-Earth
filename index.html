@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body id="main">
+    <header class="header">
+        <h1 id="title">Earth Survey Form</h1>
+        <p id="description">Thank you for taking your time to help us improve earth.</p>
+      </header>
+      <form id="survey-form">
+        <label id="name-label">Name</label>
+        <input 
+               id="name" 
+               type="text" 
+               placeholder="Enter your name"
+               class="form-control"
+               required>
+        <label id="email-label">Email</label>
+        <input 
+               id="email" 
+               type=email 
+               placeholder="Enter your mail"
+               class="form-control"
+               required>
+          <label id="number-label">Age</label>
+          <input
+               id="number"
+               type=number
+               placeholder="Enter a number"
+               class="form-control"
+               min=10
+               max=100>
+        <label>Are you from Earth?</label>
+        <select id="dropdown" name="role" class="form-control" required>
+          <option disabled selected value>Select</option>
+          <option value="earthling">Earthling</option>
+          <option value="alien">Alien</option>
+          <option value="other">Other</option>
+        </select>
+        
+        <div class="form-group">
+          <p>Whould you recomend earth to a friend?</p>
+          <label>
+            <input
+              name="user-recomend" 
+              value="definitely"
+              type="radio"
+              class="input-radio"
+              checked
+              />Definitely
+          </label> 
+          <label>
+            <input 
+              name="user-recomend"
+              value="maybe"
+              type="radio"
+              class="input-radio"
+              />Maybe
+          </label>
+          <label>
+            <input 
+              name="user-recomend"
+              value="not-sure"
+              type="radio"
+              class="input-radio"
+              />Not sure
+          </label>
+          <label>
+            <input 
+             name="user-recomend" 
+             value="not-really" 
+             type="radio"
+             class="input-radio"
+             />Not really
+          </label>
+        </div>
+        
+        <div class="form-group">
+          <p>What whould you like to see improved?</p>
+          <label>
+            <input
+              name="prefer" 
+              value="hunger"
+              type="checkbox"
+              class="input-checkbox"
+              />Hunger
+          </label> 
+          <label>
+            <input 
+              name="prefer"
+              value="education"
+              type="checkbox"
+              class="input-checkbox"
+              />Education
+          </label>
+          <label>
+            <input 
+              name="prefer"
+              value="polution"
+              type="checkbox"
+              class="input-checkbox"
+              />Polution
+          </label>
+          <label>
+            <input 
+             name="prefer" 
+             value="wildlife" 
+             type="checkbox"
+             class="input-checkbox"
+             />Wildlife
+          </label>
+          <label>
+            <input 
+             name="prefer" 
+             value="unity" 
+             type="checkbox"
+             class="input-checkbox"
+             />Unity
+          </label>
+        </div>
+        
+        <div class="form-group">
+          <p>Any suggestions?</p>
+          <textarea 
+            id="comments" 
+            placeholder="Enter your comment here..."
+            class="input-textarea">
+          </textarea>
+        </div>
+        
+        <div class="form-group">
+          <button id="submit" type="submit" class="submit-button">Submit</button>
+        </div>
+      </form>
+
+      <footer>
+        <p>
+          **This is just a fake page. Everything in the page
+          is not real.
+        </p>
+        <p>
+          &copy; Created for
+          <a href="https://www.freecodecamp.com/" target="_blank"
+            >freeCodeCamp <i class="fab fa-free-code-camp"></i
+          ></a>
+        </p>
+      </footer>
+
+</body>
+</html>

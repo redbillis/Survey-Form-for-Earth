@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+
+body {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  background: rgb(1, 1 ,20);
+  background-image: linear-gradient(
+      115deg,
+      rgba(58, 58, 158, 0.8),
+      rgba(136, 136, 206, 0.7)
+    ), url(https://www.wallpapers13.com/wp-content/uploads/2015/12/Best-space-view-of-earth-wallpapers-hd-915x515.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+}
+
+h1 {
+  font-size: 400%;
+  font-weight: 600;
+  line-height: 0;
+  padding-top: 50px;
+  padding-bottom: 0px;
+}
+
+p {
+  font-size: 110%;
+  font-weight: 600;
+}
+
+#survey-form{
+  padding-top: 25px;
+}
+
+form {
+  background: rgb(10, 20, 40);
+  width: 50%;
+  border-radius: 20px;
+  margin-left: 24%;
+  margin-bottom: 5%;
+  margin-top: 4%;
+  padding: 25px;
+}
+.form-group {
+  padding: 20px;
+}
+
+.form-control {
+  display: block;
+  width: 100%;
+  height: 30px;
+  margin-top: 5px;
+  margin-bottom: 5%;
+  border-radius: 8px;
+}
+
+.input-radio,
+.input-checkbox {
+  display: inline-block;
+  min-width: 1.25rem;
+}
+
+.input-textarea {
+  min-height: 120px;
+  width: 99%;
+  padding: 1px;
+  margin-bottom: 2px;
+  resize: vertical;
+  border-radius: 10px;
+}
+
+.submit-button{
+  display: block;
+  font-size: 110%;
+  width: 100%;
+  height: 50px;
+  padding: 0.5%;
+  background: rgb(0, 180, 60);
+  color: inherit;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* Footer */
+
+footer {
+  font-weight: 300;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2rem;
+  background: var(--main-gray);
+  border-top: 4px solid var(--main-red);
+}
+
+footer > p {
+  margin: 2rem;
+}
+
+footer i {
+  vertical-align: middle;
+}
+
+@media (max-width: 28.75em) {
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+}
